@@ -32,6 +32,7 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.all(15),
@@ -44,8 +45,12 @@ class _LoginPageState extends State<LoginPage> {
             },
             builder: (context, state) {
               if (state is AuthLoading) {
-                return Center(
-                  child: Loader(),
+                return Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SizedBox(height: size.height * 0.5),
+                    Loader(),
+                  ],
                 );
               }
               return Form(
