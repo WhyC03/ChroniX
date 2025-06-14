@@ -17,8 +17,10 @@ class AppTheme {
         color: WidgetStatePropertyAll(AppPallete.backgroundColor)),
     inputDecorationTheme: InputDecorationTheme(
       contentPadding: EdgeInsets.all(27),
+      border: _border(),
       enabledBorder: _border(),
       focusedBorder: _border(AppPallete.gradient2),
+      errorBorder: _border(AppPallete.errorColor)
     ),
   );
 }

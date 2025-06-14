@@ -11,5 +11,3 @@ final class AppUserLoggedIn extends AppUserState {
   AppUserLoggedIn(this.user);
 }
 
-// core cannot depend on other features
-// other features can depend on core
