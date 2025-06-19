@@ -18,3 +18,6 @@ final class BlogUpload extends BlogEvent {
     required this.topics,
   });
 }
+
+
+final class BlogFetchAllBlogs extends BlogEvent{}
