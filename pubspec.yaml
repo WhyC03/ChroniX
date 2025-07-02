@@ -43,6 +43,9 @@ dependencies:
   uuid: ^4.5.1
   intl: ^0.20.2
   internet_connection_checker_plus: ^2.7.2
+  hive: ^4.0.0-dev.2
+  isar_flutter_libs: ^4.0.0-dev.13
+  path_provider: ^2.1.0
 
 dev_dependencies:
   flutter_test:
@@ -67,8 +70,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
